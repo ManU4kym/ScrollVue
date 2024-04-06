@@ -8,8 +8,13 @@ class Page1 extends StatelessWidget {
     return Container(
       height: 130,
       width: 130,
-      decoration: const BoxDecoration(color: Colors.deepPurple),
-      child: const Center(child: Text('Page one')),
+      decoration: const BoxDecoration(color: Color.fromARGB(255, 51, 50, 53)),
+      child: const Center(
+        child: Text(
+          'Page one',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
     );
   }
 }

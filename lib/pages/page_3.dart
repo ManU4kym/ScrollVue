@@ -8,7 +8,7 @@ class Page3 extends StatelessWidget {
     return Container(
       height: 130,
       width: 130,
-      decoration: const BoxDecoration(color: Colors.deepPurple),
+      decoration: const BoxDecoration(color: Color.fromARGB(255, 95, 91, 102)),
       child: const Center(child: Text('Page three')),
     );
   }
