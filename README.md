@@ -1,16 +1,17 @@
-# pageview
+# ScrollVue
 
-A new Flutter project.
+ScrollVue is a Flutter package aimed at creating a smooth and visually appealing user experience for page navigation and content browsing. It combines the functionality of page views with sleek indicators to enhance user engagement and navigation within a mobile application.
+
+## Features
+
+- **PageView:** Navigate through different sections or pages of content seamlessly with smooth transitions.
+- **Smooth Indicators:** Visual elements provide clear indication of the current position within the content, dynamically updating as users scroll through the pages.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To use ScrollVue in your Flutter project, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Add the ScrollVue dependency to your `pubspec.yaml` file:
+   ```yaml
+   dependencies:
+     scroll_page_ndicator:
