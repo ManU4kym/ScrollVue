@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:pageview/pages/page_1.dart';
 import 'package:pageview/pages/page_2.dart';
 import 'package:pageview/pages/page_3.dart';
@@ -18,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 87, 81, 105),
+      backgroundColor: Color.fromARGB(255, 66, 72, 62),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -42,8 +41,32 @@ class _HomePageState extends State<HomePage> {
             SmoothPageIndicator(
               controller: _controller,
               count: 4,
-              effect: const JumpingDotEffect(
-                verticalOffset: 46,
+              effect: CustomizableEffect(
+                dotDecoration: DotDecoration(
+                  width: 32,
+                  height: 12,
+                  color: const Color.fromARGB(255, 87, 105, 73),
+                  rotationAngle: 180,
+                  verticalOffset: 10,
+                  borderRadius: BorderRadius.circular(24),
+                  dotBorder: const DotBorder(
+                    padding: 2,
+                    width: 2,
+                    color: Color.fromARGB(255, 138, 185, 136),
+                  ),
+                ),
+                activeDotDecoration: DotDecoration(
+                  width: 24,
+                  height: 12,
+                  color: Colors.green,
+                  dotBorder: const DotBorder(
+                    padding: 2,
+                    width: 2,
+                    color: Color.fromARGB(255, 113, 99, 73),
+                  ),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                spacing: 6.0,
               ),
             ),
           ],
