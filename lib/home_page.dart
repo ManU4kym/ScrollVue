@@ -19,27 +19,36 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 87, 81, 105),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          SizedBox(
-            height: 500,
-            width: 300,
-            child: PageView(
-              controller: _controller,
-              children: const [
-                Page1(),
-                Page2(),
-                Page3(),
-                Page4(),
-              ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            SizedBox(
+              height: 500,
+              width: 300,
+              child: PageView(
+                controller: _controller,
+                children: const [
+                  Page1(),
+                  Page2(),
+                  Page3(),
+                  Page4(),
+                ],
+              ),
             ),
-          ),
 
-          /* Indicators */
+            /* Indicators */
 
-          SmoothPageIndicator(controller: _controller, count: 4)
-        ],
+            SmoothPageIndicator(
+              controller: _controller,
+              count: 4,
+              effect: WormEffect(
+                offset: 12,
+                type: WormType.thinUnderground,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
