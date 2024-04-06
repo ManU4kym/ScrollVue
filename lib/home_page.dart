@@ -42,9 +42,8 @@ class _HomePageState extends State<HomePage> {
             SmoothPageIndicator(
               controller: _controller,
               count: 4,
-              effect: WormEffect(
-                offset: 12,
-                type: WormType.thinUnderground,
+              effect: const JumpingDotEffect(
+                verticalOffset: 46,
               ),
             ),
           ],
