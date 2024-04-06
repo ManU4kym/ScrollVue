@@ -4,6 +4,7 @@ import 'package:pageview/pages/page_1.dart';
 import 'package:pageview/pages/page_2.dart';
 import 'package:pageview/pages/page_3.dart';
 import 'package:pageview/pages/page_4.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -34,6 +35,10 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+
+          /* Indicators */
+
+          SmoothPageIndicator(controller: _controller, count: 4)
         ],
       ),
     );

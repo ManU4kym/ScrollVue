@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pageview/home_page.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 void main() {
   testWidgets('PageView with Smooth Indicators Test',
@@ -26,7 +27,7 @@ void main() {
     // Add assertions to verify the state of your UI after the action
     // For example, you might expect the SmoothIndicators to update
     await tester.pump(); // Rebuild the widget tree after the animation
-    expect(find.byType(SmoothPageIndicators), findsOneWidget);
+    expect(find.byType(SmoothPageIndicator), findsOneWidget);
     // Add more assertions as needed
 
     // You can also test other interactions, animations, or edge cases here
